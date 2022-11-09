@@ -566,6 +566,14 @@ gap: 21px;
     gap: 12px;
     flex-wrap: wrap;
 }
+.footer-p-next{
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--hero-color);
+    text-transform:uppercase;
+    margin-bottom: 20px;
+}
 .input-email{
     color: var(--hero-color);
     background: transparent;
