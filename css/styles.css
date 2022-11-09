@@ -609,6 +609,10 @@ gap: 21px;
     align-items: center;
     justify-content: center;
 }
+.button-mail:hover,
+.button-mail:focus{
+    cursor: pointer;
+}
 .icon-send{
     fill: var(--hero-color);
     margin-left: 10px;
@@ -658,4 +662,16 @@ z-index: 3;
 .is-hidden{
     opacity: 0;
     pointer-events: none;
+}
+.form-row-title{
+    display: grid;
+}
+.row-input{
+    position: relative;
+}
+.icons-modal{
+    fill: var(--main-color);
+    position: absolute;
+    left: 45px;
+    top: 80px;
 }
