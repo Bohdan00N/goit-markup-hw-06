@@ -64,12 +64,21 @@ ul {
   letter-spacing: 0.02em;
   padding: 30px 0;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-list .link:hover::after,
-.nav-list .link:focus::after,
+.nav-list .link:focus::after{
+  color: var(--accent-color);
+ 
+}
+.nav-list .link:hover,
+.nav-list .link:focus{
+  color: var(--accent-color);
+  
+}
+
 .nav-list .link.current::after {
   color: var(--accent-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
 }
 .nav-list .link::after {
@@ -794,7 +803,8 @@ ul {
 }
 .privacy .privacy-input:focus + .privacy-label::before,
 .privacy .privacy-input:hover + .privacy-label::before {
-  border-color: var(--accent-color);
+  outline: auto;
+  outline-color: var(--accent-color);
   transition: var(--o-animation);
 }
 .modal-button {
