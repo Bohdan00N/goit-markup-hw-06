@@ -754,7 +754,10 @@ ul {
   padding-left: 37px;
 }
 .privacy-input {
-  display: none;
+  opacity: 0;
+  appearance: none;
+  position: absolute;
+  user-select: none;
 }
 .privacy {
   font-weight: 400;
@@ -762,6 +765,7 @@ ul {
   line-height: 1.7142;
   letter-spacing: 0.03em;
   color: #757575;
+  position: relative;
 }
 .privacy .privacy-label::before {
   position: absolute;
@@ -787,6 +791,11 @@ ul {
 .form-link {
   color: var(--accent-color);
   text-decoration-skip-ink: none;
+}
+.privacy .privacy-input:focus + .privacy-label::before,
+.privacy .privacy-input:hover + .privacy-label::before {
+  border-color: var(--accent-color);
+  transition: var(--o-animation);
 }
 .modal-button {
   height: 50px;
